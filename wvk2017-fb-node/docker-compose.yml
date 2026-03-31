@@ -4,7 +4,7 @@ services:
 
   app_proxy:
     environment:
-      APP_HOST: wvk2017-fractal-bitcoin-node_web_1
+      APP_HOST: wvk2017-fb-node_web_1
       APP_PORT: 8080
   web:
     image: amir20/dozzle:latest
@@ -18,7 +18,7 @@ services:
     restart: on-failure
     stop_grace_period: 1m
     volumes:
-      - ${APP_DATA_DIR}/.fractal-bitcoin:/root/.fractal-bitcoin
+      - ${APP_DATA_DIR}/.fractal-bitcoin:/root/.bitcoind
     ports:
       - 9030:9030    # RPC
       - 7030:7030    # ZMQ
