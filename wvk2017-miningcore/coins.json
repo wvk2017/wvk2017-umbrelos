@@ -1,0 +1,737 @@
+{
+  "5gcash": {
+    "name": "5G Cash",
+    "symbol": "VGC",
+    "family": "bitcoin",
+    "website": "https://fiveg.cash/",
+    "market": "",
+    "twitter": "https://x.com/5gCash",
+    "telegram": "https://t.me/VGC_5GCASH",
+    "discord": "https://discord.gg/uXHvyBT",
+    "coinbaseHasher": {
+      "hash": "sha256d"
+    },
+    "headerHasher": {
+      "hash": "x16r-v2"
+    },
+    "blockHasher": {
+      "hash": "reverse",
+      "args": [
+        {
+          "hash": "x16r-v2"
+        }
+      ]
+    },
+    "posBlockHasher": {
+      "hash": "reverse",
+      "args": [
+        {
+          "hash": "x16r-v2"
+        }
+      ]
+    },
+    "hasMasterNodes": true,
+    "shareMultiplier": 4096,
+    "explorerBlockLink": "https://explorer.fiveg.cash/block/$hash$",
+    "explorerTxLink": "https://explorer.fiveg.cash/tx/{0}",
+    "explorerAccountLink": "https://explorer.fiveg.cash/address/{0}"
+  },
+  "argoneum": {
+    "name": "Argoneum",
+    "symbol": "AGM",
+    "family": "bitcoin",
+    "website": "https://argoneum.net/",
+    "github": "https://github.com/Argoneum/argoneum",
+    "market": "",
+    "twitter": "",
+    "discord": "https://discordapp.com/invite/3g6XmKE",
+    "coinbaseHasher": {
+      "hash": "sha256d"
+    },
+    "headerHasher": {
+      "hash": "phi2"
+    },
+    "blockHasher": {
+      "hash": "reverse",
+      "args": [
+        {
+          "hash": "phi2"
+        }
+      ]
+    },
+    "hasMasterNodes": true,
+    "shareMultiplier": 256,
+    "explorerBlockLink": "https://chainz.cryptoid.info/agm/block.dws?$height$.htm",
+    "explorerTxLink": "https://chainz.cryptoid.info/agm/tx.dws?{0}.htm",
+    "explorerAccountLink": "https://chainz.cryptoid.info/agm/address.dws?{0}.htm"
+  },
+  "auroracoin-sha256": {
+    "name": "Auroracoin Sha256",
+    "canonicalName": "Auroracoin",
+    "symbol": "AUR",
+    "family": "bitcoin",
+    "website": "http://auroracoin.is/",
+    "market": "https://coinmarketcap.com/currencies/auroracoin/",
+    "twitter": "https://x.com/OfficialAUR",
+    "telegram": "",
+    "discord": "https://discord.gg/Fhm4758",
+    "coinbaseHasher": {
+      "hash": "sha256d"
+    },
+    "headerHasher": {
+      "hash": "sha256d"
+    },
+    "blockHasher": {
+      "hash": "reverse",
+      "args": [
+        {
+          "hash": "sha256d"
+        }
+      ]
+    },
+    "blockTemplateRpcExtraParams": [
+      "sha256d"
+    ],
+    "explorerBlockLink": "https://chainz.cryptoid.info/aur/block.dws?$height$.htm",
+    "explorerTxLink": "https://chainz.cryptoid.info/aur/tx.dws?{0}.htm",
+    "explorerAccountLink": "https://chainz.cryptoid.info/aur/address.dws?{0}.htm"
+  },
+  "auroracoin-scrypt": {
+    "name": "Auroracoin Scrypt",
+    "canonicalName": "Auroracoin",
+    "symbol": "AUR",
+    "family": "bitcoin",
+    "website": "http://auroracoin.is/",
+    "market": "https://coinmarketcap.com/currencies/auroracoin/",
+    "twitter": "https://x.com/OfficialAUR",
+    "telegram": "",
+    "discord": "https://discord.gg/Fhm4758",
+    "coinbaseHasher": {
+      "hash": "sha256d"
+    },
+    "headerHasher": {
+      "hash": "scrypt",
+      "args": [
+        1024,
+        1
+      ]
+    },
+    "blockHasher": {
+      "hash": "reverse",
+      "args": [
+        {
+          "hash": "sha256d"
+        }
+      ]
+    },
+    "blockTemplateRpcExtraParams": [
+      "scrypt"
+    ],
+    "shareMultiplier": 65536,
+    "explorerBlockLink": "https://chainz.cryptoid.info/aur/block.dws?$height$.htm",
+    "explorerTxLink": "https://chainz.cryptoid.info/aur/tx.dws?{0}.htm",
+    "explorerAccountLink": "https://chainz.cryptoid.info/aur/address.dws?{0}.htm"
+  },
+  "auroracoin-skein": {
+    "name": "Auroracoin Skein",
+    "canonicalName": "Auroracoin",
+    "symbol": "AUR",
+    "family": "bitcoin",
+    "website": "http://auroracoin.is/",
+    "market": "https://coinmarketcap.com/currencies/auroracoin/",
+    "twitter": "https://x.com/OfficialAUR",
+    "telegram": "",
+    "discord": "https://discord.gg/Fhm4758",
+    "coinbaseHasher": {
+      "hash": "sha256d"
+    },
+    "headerHasher": {
+      "hash": "skein"
+    },
+    "blockHasher": {
+      "hash": "reverse",
+      "args": [
+        {
+          "hash": "sha256d"
+        }
+      ]
+    },
+    "blockTemplateRpcExtraParams": [
+      "skein"
+    ],
+    "explorerBlockLink": "https://chainz.cryptoid.info/aur/block.dws?$height$.htm",
+    "explorerTxLink": "https://chainz.cryptoid.info/aur/tx.dws?{0}.htm",
+    "explorerAccountLink": "https://chainz.cryptoid.info/aur/address.dws?{0}.htm"
+  },
+  "auroracoin-qubit": {
+    "name": "Auroracoin Qubit",
+    "canonicalName": "Auroracoin",
+    "symbol": "AUR",
+    "family": "bitcoin",
+    "website": "http://auroracoin.is/",
+    "market": "https://coinmarketcap.com/currencies/auroracoin/",
+    "twitter": "https://x.com/OfficialAUR",
+    "telegram": "",
+    "discord": "https://discord.gg/Fhm4758",
+    "coinbaseHasher": {
+      "hash": "sha256d"
+    },
+    "headerHasher": {
+      "hash": "qubit"
+    },
+    "blockHasher": {
+      "hash": "reverse",
+      "args": [
+        {
+          "hash": "sha256d"
+        }
+      ]
+    },
+    "blockTemplateRpcExtraParams": [
+      "qubit"
+    ],
+    "explorerBlockLink": "https://chainz.cryptoid.info/aur/block.dws?$height$.htm",
+    "explorerTxLink": "https://chainz.cryptoid.info/aur/tx.dws?{0}.htm",
+    "explorerAccountLink": "https://chainz.cryptoid.info/aur/address.dws?{0}.htm"
+  },
+  "auroracoin-groestl": {
+    "name": "Auroracoin Groestl",
+    "canonicalName": "Auroracoin",
+    "symbol": "AUR",
+    "family": "bitcoin",
+    "website": "http://auroracoin.is/",
+    "market": "https://coinmarketcap.com/currencies/auroracoin/",
+    "twitter": "https://x.com/OfficialAUR",
+    "telegram": "",
+    "discord": "https://discord.gg/Fhm4758",
+    "coinbaseHasher": {
+      "hash": "sha256d"
+    },
+    "headerHasher": {
+      "hash": "groestl-myriad"
+    },
+    "blockHasher": {
+      "hash": "reverse",
+      "args": [
+        {
+          "hash": "sha256d"
+        }
+      ]
+    },
+    "shareMultiplier": 4096,
+    "blockTemplateRpcExtraParams": [
+      "groestl"
+    ],
+    "explorerBlockLink": "https://chainz.cryptoid.info/aur/block.dws?$height$.htm",
+    "explorerTxLink": "https://chainz.cryptoid.info/aur/tx.dws?{0}.htm",
+    "explorerAccountLink": "https://chainz.cryptoid.info/aur/address.dws?{0}.htm"
+  },
+  "australia-cash": {
+    "name": "Australia Cash",
+    "canonicalName": "Australia-Cash",
+    "symbol": "AUS",
+    "family": "bitcoin",
+    "website": "https://australiacash.org/",
+    "market": "",
+    "twitter": "https://x.com/australia_cash",
+    "telegram": "",
+    "discord": "https://discordapp.com/invite/rp48vVW",
+    "coinbaseHasher": {
+      "hash": "sha256d"
+    },
+    "headerHasher": {
+      "hash": "scrypt",
+      "args": [
+        1024,
+        1
+      ]
+    },
+    "blockHasher": {
+      "hash": "reverse",
+      "args": [
+        {
+          "hash": "sha256d"
+        }
+      ]
+    },
+    "shareMultiplier": 65536,
+    "explorerBlockLink": "https://openchains.info/coin/australiacash/block/$height$",
+    "explorerTxLink": "https://openchains.info/coin/australiacash/tx/{0}",
+    "explorerAccountLink": "https://openchains.info/coin/australiacash/address/{0}"
+  },
+  "axe": {
+    "name": "Axe",
+    "canonicalName": "Axe",
+    "symbol": "AXE",
+    "family": "bitcoin",
+    "website": "https://axerunners.com/",
+    "market": "https://coinmarketcap.com/currencies/axe/",
+    "twitter": "https://x.com/search?q=$axe",
+    "telegram": "https://t.me/axerunners",
+    "discord": "https://discordapp.com/invite/BqhteaU",
+    "coinbaseHasher": {
+      "hash": "sha256d"
+    },
+    "headerHasher": {
+      "hash": "x11"
+    },
+    "blockHasher": {
+      "hash": "reverse",
+      "args": [
+        {
+          "hash": "x11"
+        }
+      ]
+    },
+    "hasMasterNodes": true,
+    "explorerBlockLink": "https://axe-explorer.arcpool.com/block/$hash$",
+    "explorerTxLink": "https://axe-explorer.arcpool.com/tx/{0}",
+    "explorerAccountLink": "https://axe-explorer.arcpool.com/address/{0}"
+  },
+  "barrelcrudecoin": {
+    "name": "BarrelCrudeCoin",
+    "canonicalName": "BarrelCrudeCoin",
+    "symbol": "BCC",
+    "family": "bitcoin",
+    "website": "https://www.barrelcrudecoin.com/",
+    "twitter": "https://x.com/barrelcrudecoin",
+    "telegram": "https://t.me/barrelcrudecoinofficial",
+    "discord": "#",
+    "coinbaseHasher": {
+      "hash": "sha256d"
+    },
+    "headerHasher": {
+      "hash": "scrypt",
+      "args": [
+        1024,
+        1
+      ]
+    },
+    "blockHasher": {
+      "hash": "reverse",
+      "args": [
+        {
+          "hash": "sha256d"
+        }
+      ]
+    },
+    "shareMultiplier": 65536,
+    "explorerBlockLink": "http://explorer.kriptokyng.com:3001/block/$height$",
+    "explorerTxLink": "http://explorer.kriptokyng.com:3001/tx/{0}",
+    "explorerAccountLink": "http://explorer.kriptokyng.com:3001/address/{0}"
+  },
+  "bitcoin": {
+    "name": "Bitcoin",
+    "canonicalName": "Bitcoin",
+    "symbol": "BTC",
+    "family": "bitcoin",
+    "website": "https://www.bitcoin.org/",
+    "market": "https://coinmarketcap.com/currencies/bitcoin/",
+    "twitter": "https://x.com/bitcoin",
+    "telegram": "",
+    "discord": "",
+    "coinbaseHasher": {
+      "hash": "sha256d"
+    },
+    "headerHasher": {
+      "hash": "sha256d"
+    },
+    "blockHasher": {
+      "hash": "reverse",
+      "args": [
+        {
+          "hash": "sha256d"
+        }
+      ]
+    },
+    "coinbaseIgnoreAuxFlags": true,
+    "explorerBlockLink": "https://www.blockchain.com/btc/block/$hash$",
+    "explorerTxLink": "https://www.blockchain.com/btc/tx/{0}",
+    "explorerAccountLink": "https://www.blockchain.com/btc/address/{0}"
+  },
+  "bitcoin-silver": {
+    "name": "Bitcoin Silver",
+    "canonicalName": "Bitcoin-Silver",
+    "symbol": "BTCS",
+    "family": "bitcoin",
+    "website": "https://www.bitcoinsilver.top/",
+    "market": "https://coinpaprika.com/coin/btcs-bitcoin-scrypt",
+    "twitter": "https://x.com/Official_BTCS",
+    "telegram": "",
+    "discord": "",
+    "coinbaseHasher": {
+      "hash": "sha256d"
+    },
+    "headerHasher": {
+      "hash": "sha256d"
+    },
+    "blockHasher": {
+      "hash": "reverse",
+      "args": [
+        {
+          "hash": "sha256d"
+        }
+      ]
+    },
+    "coinbaseIgnoreAuxFlags": true,
+    "explorerBlockLink": "https://explorer.bitcoinsilver.top/block/$hash$",
+    "explorerTxLink": "https://explorer.bitcoinsilver.top/tx/{0}",
+    "explorerAccountLink": "https://explorer.bitcoinsilver.top/address/{0}"
+  },
+  "nito": {
+    "name": "Nito",
+    "canonicalName": "Nite",
+    "symbol": "NITO",
+    "family": "bitcoin",
+    "website": "https://nito.network/",
+    "market": "https://coinpaprika.com/coin/nito-nito-coin/",
+    "twitter": "https://x.com/Nito_Network",
+    "telegram": "",
+    "discord": "",
+    "coinbaseHasher": {
+      "hash": "sha256d"
+    },
+    "headerHasher": {
+      "hash": "sha256d"
+    },
+    "blockHasher": {
+      "hash": "reverse",
+      "args": [
+        {
+          "hash": "sha256d"
+        }
+      ]
+    },
+    "coinbaseIgnoreAuxFlags": true,
+    "explorerBlockLink": "https://explorer.nito.network/block/$hash$",
+    "explorerTxLink": "https://explorer.nito.network/tx/{0}",
+    "explorerAccountLink": "https://explorer.nito.network/address/{0}"
+  },
+  "wojakcoin": {
+    "name": "Wojakcoin",
+    "canonicalName": "Wojakcoin",
+    "symbol": "WJK",
+    "family": "bitcoin",
+    "website": "https://wojakcoin.cash/",
+    "market": "https://miningpoolstats.stream/wojakcoin",
+    "twitter": "https://x.com/wojakcoin2017",
+    "telegram": "",
+    "discord": "",
+    "coinbaseHasher": {
+      "hash": "sha256d"
+    },
+    "headerHasher": {
+      "hash": "sha256d"
+    },
+    "blockHasher": {
+      "hash": "reverse",
+      "args": [
+        {
+          "hash": "sha256d"
+        }
+      ]
+    },
+    "explorerBlockLink": "https://explorer.wojakcoin.cash/block/$hash$",
+    "explorerTxLink": "https://explorer.wojakcoin.cash/tx/{0}",
+    "explorerAccountLink": "https://explorer.wojakcoin.cash/address/{0}"
+  },
+  "bitcoin-ii": {
+    "name": "BitcoinII",
+    "canonicalName": "Bitcoin-II",
+    "symbol": "BC2",
+    "family": "bitcoin",
+    "website": "https://bitcoin-ii.org/",
+    "market": "https://coinmarketcap.com/currencies/bitcoinii/",
+    "twitter": "https://x.com/BitcoinIIOrg",
+    "telegram": "",
+    "discord": "",
+    "coinbaseHasher": {
+      "hash": "sha256d"
+    },
+    "headerHasher": {
+      "hash": "sha256d"
+    },
+    "blockHasher": {
+      "hash": "reverse",
+      "args": [
+        {
+          "hash": "sha256d"
+        }
+      ]
+    },
+    "explorerBlockLink": "https://bitcoinii.ddns.net/explorer/block/$hash$",
+    "explorerTxLink": "https://bitcoinii.ddns.net/explorer/tx/{0}",
+    "explorerAccountLink": "https://bitcoinii.ddns.net/explorer/address/{0}"
+  },
+  "bitcoin-cash": {
+    "name": "Bitcoin Cash",
+    "canonicalName": "Bitcoin-Cash",
+    "symbol": "BCH",
+    "family": "bitcoin",
+    "website": "",
+    "market": "",
+    "twitter": "",
+    "telegram": "",
+    "discord": "",
+    "coinbaseHasher": {
+      "hash": "sha256d"
+    },
+    "headerHasher": {
+      "hash": "sha256d"
+    },
+    "blockHasher": {
+      "hash": "reverse",
+      "args": [
+        {
+          "hash": "sha256d"
+        }
+      ]
+    },
+    "explorerBlockLink": "https://bchblockexplorer.com/block/$height$",
+    "explorerTxLink": "https://bchblockexplorer.com/tx/{0}",
+    "explorerAccountLink": "https://bchblockexplorer.com/address/{0}"
+  },
+  "bitcoin-diamond": {
+    "name": "Bitcoin Diamond",
+    "canonicalName": "Bitcoin-Diamond",
+    "symbol": "BCD",
+    "family": "bitcoin",
+    "website": "http://btcd.io/",
+    "market": "https://coinmarketcap.com/currencies/bitcoin-diamond/",
+    "twitter": "https://x.com/search?q=$bcd",
+    "telegram": "https://t.me/BCDcommunity",
+    "discord": "",
+    "coinbaseHasher": {
+      "hash": "sha256d"
+    },
+    "headerHasher": {
+      "hash": "x13bcd"
+    },
+    "blockHasher": {
+      "hash": "reverse",
+      "args": [
+        {
+          "hash": "sha256d"
+        }
+      ]
+    },
+    "explorerBlockLink": "http://explorer.btcd.io/#/blockInfo?hash=$hash$",
+    "explorerTxLink": "http://explorer.btcd.io/#/TX?TX={0}",
+    "explorerAccountLink": "http://explorer.btcd.io/#/address?address={0}"
+  },
+  "bitcoin-sv": {
+    "name": "BitcoinSV",
+    "canonicalName": "Bitcoin-SV",
+    "symbol": "BSV",
+    "family": "bitcoin",
+    "website": "",
+    "market": "",
+    "twitter": "",
+    "telegram": "",
+    "discord": "",
+    "coinbaseHasher": {
+      "hash": "sha256d"
+    },
+    "headerHasher": {
+      "hash": "sha256d"
+    },
+    "blockHasher": {
+      "hash": "reverse",
+      "args": [
+        {
+          "hash": "sha256d"
+        }
+      ]
+    },
+    "explorerBlockLink": "https://bsv.tokenview.com/block/$height$",
+    "explorerTxLink": "https://bsv.tokenview.com/tx/{0}",
+    "explorerAccountLink": "https://bsv.tokenview.com/address/{0}"
+  },
+  "bitcoinnickel": {
+    "name": "Bitcoinnickel",
+    "canonicalName": "Bitcoinnickel",
+    "symbol": "BCON",
+    "family": "bitcoin",
+    "website": "https://btcnickel.com/",
+    "market": "",
+    "twitter": "https://x.com/InfoBcon",
+    "telegram": "https://t.me/bitcoinnickel",
+    "discord": "https://discord.gg/2qu8yQstx9",
+    "coinbaseHasher": {
+      "hash": "sha256d"
+    },
+    "headerHasher": {
+      "hash": "sha256d"
+    },
+    "blockHasher": {
+      "hash": "reverse",
+      "args": [
+        {
+          "hash": "sha256d"
+        }
+      ]
+    },
+    "explorerBlockLink": "https://explorer.btcnickel.com/block/$hash$",
+    "explorerTxLink": "https://explorer.btcnickel.com/tx/{0}",
+    "explorerAccountLink": "https://explorer.btcnickel.com/address/{0}"
+  },
+  "bitcore": {
+    "name": "Bitcore",
+    "canonicalName": "Bitcore",
+    "symbol": "BTX",
+    "family": "bitcoin",
+    "website": "http://bitcore.cc/",
+    "market": "https://www.coingecko.com/en/coins/bitcore",
+    "twitter": "https://x.com/bitcore_btx",
+    "telegram": "",
+    "discord": "https://discordapp.com/invite/Q8uEjED",
+    "coinbaseHasher": {
+      "hash": "sha256d"
+    },
+    "headerHasher": {
+      "hash": "megabtx"
+    },
+    "blockHasher": {
+      "hash": "reverse",
+      "args": [
+        {
+          "hash": "sha256d"
+        }
+      ]
+    },
+    "hasMasterNodes": true,
+    "shareMultiplier": 256,
+    "coinbaseMinConfimations": 4032,
+    "explorerBlockLink": "https://chainz.cryptoid.info/btx/block.dws?$height$.htm",
+    "explorerTxLink": "https://chainz.cryptoid.info/btx/tx.dws?{0}.htm",
+    "explorerAccountLink": "https://chainz.cryptoid.info/btx/address.dws?{0}.htm"
+  },
+  "bitflate": {
+    "name": "Bitflate",
+    "canonicalName": "Bitflate",
+    "symbol": "BFL",
+    "family": "bitcoin",
+    "website": "https://bitflate.org/",
+    "market": "https://coinmarketcap.com/currencies/bitflate/",
+    "twitter": "https://www.x.com/bitflate",
+    "telegram": "",
+    "discord": "https://discord.gg/utnEyp8",
+    "coinbaseHasher": {
+      "hash": "sha256d"
+    },
+    "headerHasher": {
+      "hash": "sha256d"
+    },
+    "blockHasher": {
+      "hash": "reverse",
+      "args": [
+        {
+          "hash": "sha256d"
+        }
+      ]
+    },
+    "explorerBlockLink": "https://explorer.bitflate.org/block/$hash$",
+    "explorerTxLink": "https://explorer.bitflate.org/tx/{0}",
+    "explorerAccountLink": "https://explorer.bitflate.org/address/{0}"
+  },
+  "bolivarcoin": {
+    "name": "Bolivarcoin",
+    "canonicalName": "Bolivarcoin",
+    "symbol": "BOLI",
+    "family": "bitcoin",
+    "website": "http://www.bolis.info/",
+    "market": "https://coinmarketcap.com/currencies/bolivarcoin/",
+    "twitter": "https://x.com/BolivarCoin_XT",
+    "telegram": "https://t.me/bolivarcoinoficial",
+    "discord": "",
+    "coinbaseHasher": {
+      "hash": "sha256d"
+    },
+    "headerHasher": {
+      "hash": "x11"
+    },
+    "blockHasher": {
+      "hash": "reverse",
+      "args": [
+        {
+          "hash": "x11"
+        }
+      ]
+    },
+    "hasMasterNodes": true,
+    "explorerBlockLink": "https://chainz.cryptoid.info/boli/block.dws?$height$.htm",
+    "explorerTxLink": "https://chainz.cryptoid.info/boli/tx.dws?{0}.htm",
+    "explorerAccountLink": "https://chainz.cryptoid.info/boli/address.dws?{0}.htm"
+  },
+  "browncoin": {
+    "name": "Browncoin",
+    "symbol": "BRWN",
+    "family": "bitcoin",
+    "website": "",
+    "market": "",
+    "twitter": "",
+    "telegram": "",
+    "discord": "",
+    "coinbaseHasher": {
+      "hash": "sha256d"
+    },
+    "headerHasher": {
+      "hash": "verthash"
+    },
+    "blockHasher": {
+      "hash": "reverse",
+      "args": [
+        {
+          "hash": "sha256d"
+        }
+      ]
+    },
+    "shareMultiplier": 256,
+    "coinbaseMinConfimations": 1001,
+    "explorerBlockLink": "https://openchains.info/coin/browncoin/block/$height$",
+    "explorerTxLink": "https://openchains.info/coin/browncoin/tx/{0}",
+    "explorerAccountLink": "https://openchains.info/coin/browncoin/address/{0}"
+  },
+  "butkoin-sha256": {
+    "name": "ButKoin Sha256",
+    "canonicalName": "ButKoin",
+    "symbol": "BUTK",
+    "family": "bitcoin",
+    "website": "https://butcoin.tech/",
+    "market": "",
+    "twitter": "https://x.com/ButKoin",
+    "telegram": "",
+    "discord": "https://discord.com/invite/j7T82mKkrw",
+    "coinbaseHasher": {
+      "hash": "sha256d"
+    },
+    "headerHasher": {
+      "hash": "sha256d"
+    },
+    "blockHasher": {
+      "hash": "reverse",
+      "args": [
+        {
+          "hash": "sha256d"
+        }
+      ]
+    },
+    "blockTemplateRpcExtraParams": [
+      "sha256d"
+    ],
+    "hasFounderFee": true,
+    "hasMasterNodes": true,
+    "explorerBlockLink": "https://blocks.butcoin.tech/block/$hash$",
+    "explorerTxLink": "https://blocks.butcoin.tech/tx/{0}",
+    "explorerAccountLink": "https://blocks.butcoin.tech/address/{0}"
+  },
+  "butkoin-scrypt": {
+    "name": "ButKoin Scrypt",
+    "canonicalName": "ButKoin",
+    "symbol": "BUTK",
+    "family": "bitcoin",
+    "website": "https://butcoin.tech/",
+    "market": "",
+    "twitter": "https://x.com/ButKoin",
+    "telegram": "",
+    "discord": "https://
