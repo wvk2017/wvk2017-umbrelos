@@ -378,6 +378,35 @@
     "explorerTxLink": "https://explorer.bitcoinsilver.top/tx/{0}",
     "explorerAccountLink": "https://explorer.bitcoinsilver.top/address/{0}"
   },
+    "fractal-bitcoin": {
+    "name": "fractal-bitcoin",
+    "canonicalName": "fractal-bitcoin",
+    "symbol": "FB",
+    "family": "bitcoin",
+    "website": "https://www.fractalbitcoin.io/",
+    "market": "https://coinmarketcap.com/currencies/fractal-bitcoin/",
+    "twitter": "https://x.com/fractal_bitcoin",
+    "telegram": "",
+    "discord": "",
+    "coinbaseHasher": {
+      "hash": "sha256d"
+    },
+    "headerHasher": {
+      "hash": "sha256d"
+    },
+    "blockHasher": {
+      "hash": "reverse",
+      "args": [
+        {
+          "hash": "sha256d"
+        }
+      ]
+    },
+    "coinbaseIgnoreAuxFlags": true,
+    "explorerBlockLink": "https://mempool.fractalbitcoin.io/block/$hash$",
+    "explorerTxLink": "https://mempool.fractalbitcoin.io/tx/{0}",
+    "explorerAccountLink": "https://mempool.fractalbitcoin.io/address/{0}"
+  },
   "nito": {
     "name": "Nito",
     "canonicalName": "Nite",
