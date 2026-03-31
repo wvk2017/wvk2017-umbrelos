@@ -1,4 +1,4 @@
-version: "3.7"
+version: "3.8"
 
 services:
 
@@ -18,7 +18,7 @@ services:
     restart: on-failure
     stop_grace_period: 1m
     volumes:
-      - ${APP_DATA_DIR}/.fractal-bitcoin:/root/.bitcoind
+      - ${APP_DATA_DIR}/.fractal-bitcoin:/root/.fractal-bitcoin
     ports:
       - 9030:9030    # RPC
       - 7030:7030    # ZMQ
