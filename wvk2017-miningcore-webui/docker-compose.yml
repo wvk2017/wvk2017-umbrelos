@@ -7,7 +7,7 @@ services:
       APP_HOST: wvk2017-miningcore-webui_web_1
       APP_PORT: 8080
   web:
-    image: wvk2017/Miningcore.WebUI
+    image: wvk2017/miningcore-webui
 #    ports:
 #      - 5002:8080
     restart: on-failure
