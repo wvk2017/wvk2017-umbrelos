@@ -7,12 +7,12 @@ services:
       APP_HOST: wvk2017-miningcore-webui_web_1
       APP_PORT: 8080
   web:
-    image: wvk2017/miningcore-webui
+    image: wvk2017/Miningcore.WebUI
 #    ports:
 #      - 5002:8080
     restart: on-failure
     volumes:
-      - /home/umbrel/.miningcore:/app/miningcore
+      - /home/umbrel/.miningcore:/app/Miningcore.WebUI
     user: "1000:1000"
     environment:
       - POOL_NAME=Self-Hosted Mining Pool
