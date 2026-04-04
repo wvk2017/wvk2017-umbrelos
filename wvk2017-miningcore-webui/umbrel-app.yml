@@ -16,9 +16,9 @@ description: |
 developer: wvk2017
 website: http://wvk2017.nl
 submitter: wvk2017
-submission: https://hub.docker.com/r/wvk2017/miningcorewebui
-repo: https://hub.docker.com/r/wvk2017/miningcorewebui
-support: https://hub.docker.com/r/wvk2017/miningcorewebui
+submission: https://hub.docker.com/r/wvk2017/app/miningcorewebui
+repo: https://hub.docker.com/r/wvk2017/app/miningcorewebui
+support: https://hub.docker.com/r/wvk2017/app/miningcorewebui
 gallery:
   - https://raw.githubusercontent.com/TheRetroMike/retromike-umbrel-app-store/master/retro-mike-miningcore-webui/webui.png
 releaseNotes: |
