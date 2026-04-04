@@ -4,18 +4,26 @@ services:
 
   app_proxy:
     environment:
-      APP_HOST: wvk2017-miningcore-webui_web_1
+      APP_HOST: wvk2017-miningcore_web_1
       APP_PORT: 8080
-  web:
-    image: wvk2017/Miningcore.WebUI
-#    ports:
-#      - 5002:8080
-    restart: on-failure
-    volumes:
-      - /home/umbrel/.miningcore:/app/Miningcore.WebUI
+  server:
+    image: wvk2017/miningcore
     user: "1000:1000"
-    environment:
-      - POOL_NAME=Self-Hosted Mining Pool
-      - STRATUM_HOST=umbrel.local
-      - API_BASE_URL=http://wvk2017-miningcore_server_1:4000/api
-      - PLATFORM=UMBREL 
+    init: true
+    volumes:
+      - /home/umbrel/.miningcore/coins.json:/app/build/coins.json
+      - /home/umbrel/.miningcore/config.json:/app/config.json
+      - /home/umbrel/umbrel/app-data/wvk2017-vtc-node/.vertcoin:/.vertcoin
+    ports:
+      - 6001-6025:6001-6025
+      - 6201-6225:6201-6225
+      - 6301-6325:6301-6325
+      - 6401-6425:6401-6425
+      - 4000:4000
+  web:
+    image: amir20/dozzle:v8.12.8@sha256:8ff3115c9c9dd7576839df6f2575de345ca7cafa398cf2496f1f19c31d862ac1
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    restart: on-failure
+    depends_on:
+      - server
