@@ -4,8 +4,8 @@ services:
 
   app_proxy:
     environment:
-      APP_HOST: fractal-store-solo-node_web_1
-      APP_PORT: 3000
+      APP_HOST: fractal-solo-node_web_1
+      APP_PORT: 3001
   web:
     image: amir20/dozzle:latest
     volumes:
@@ -20,6 +20,6 @@ services:
     volumes:
       - ${APP_DATA_DIR}/.fractal-bitcoin:/root/.bitcoind
     ports:
-      - 10332:10332    # RPC
-      - 8333:8333    # ZMQ
-    entrypoint: "bitcoind -printtoconsole -server -prune=550 -wallet=default -zmqpubhashblock=tcp://127.0.0.1:8333 -rpcbind=0.0.0.0 -rpcport=10332 -rpcallowip=0.0.0.0/0 -rpcuser=pooluser -rpcpassword=poolpassword"
+      - 9030:9030    # RPC
+      - 7030:7030    # ZMQ
+    entrypoint: "bitcoind -printtoconsole -server -prune=550 -wallet=default -zmqpubhashblock=tcp://127.0.0.1:7030 -rpcbind=0.0.0.0 -rpcport=9030 -rpcallowip=0.0.0.0/0 -rpcuser=pooluser -rpcpassword=poolpassword"
