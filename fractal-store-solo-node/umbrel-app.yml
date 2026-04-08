@@ -2,7 +2,7 @@ manifestVersion: 1
 id: fractal-store-solo-node
 category: bitcoin
 name: Fractal Bitcoin Node
-version: "1.2.2"
+version: "1.3.0"
 tagline: Run a Fractal Bitcoin full node for solo SHA-256 mining
 icon: https://miningpoolstats.stream/ico/fractalbitcoin.webp
 description: >-
